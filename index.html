@@ -8,31 +8,46 @@
   <title>Mobile Page</title>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <a href="#" class="navbar-brand">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
         <img src="assets/logo.svg" alt="Logo" class="logo">
       </a>
-      <div class="navbar-icons">
-        <a href="#" class="icon-link">
-          <img src="assets/avatar-1.jpg" alt="User Image" class="user-image">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <a class="nav-link icon-link" href="#">
           <i class="bi bi-bell"></i>
+          <span class="notification-badge"></span>
         </a>
-        <a href="#" class="icon-link"><i class="bi bi-person-circle"></i></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="nav-link icon-link" href="#">
+          <img src="assets/avatar-1.jpg" alt="User Avatar" class="user-avatar">
+        </a>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link icon-link" href="#">
+              <i class="bi bi-bell"></i>
+              <span class="notification-badge"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link icon-link" href="#">
+              <img src="assets/avatar-1.jpg" alt="User Avatar" class="user-avatar">
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
-  <div class="container">
-    <img src="assets/hero-image.png" alt="Hero Image" class="hero-image">
+  <div class="container hero-container text-center">
     <h1 class="title">Welcome Web Students!</h1>
     <p class="subtitle">Hand-picked Instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
     <div class="buttons">
       <a href="#" class="button">Browse Courses</a>
       <a href="#" class="button">Are You Instructor?</a>
     </div>
+    <img src="assets/hero-img.png" alt="Hero Image" class="hero-image">
     <div class="features">
       <div class="feature">
         <i class="bi bi-camera-video icon"></i>
@@ -47,10 +62,33 @@
         <p>Lifetime access</p>
       </div>
     </div>
+  </div>
+
+  <div class="container recommended">
+    <h2 class="section-title">Recommended to you</h2>
     <div class="course-card">
       <img src="assets/course-image.png" alt="Course Image" class="course-image">
       <p>Course details here</p>
     </div>
+    <!-- Add more course cards as needed -->
+  </div>
+
+  <div class="container most-popular">
+    <h2 class="section-title">Most Popular</h2>
+    <div class="course-card">
+      <img src="assets/course-image.png" alt="Course Image" class="course-image">
+      <p>Course details here</p>
+    </div>
+    <!-- Add more course cards as needed -->
+  </div>
+
+  <div class="container trending">
+    <h2 class="section-title">Trending</h2>
+    <div class="course-card">
+      <img src="assets/course-image.png" alt="Course Image" class="course-image">
+      <p>Course details here</p>
+    </div>
+    <!-- Add more course cards as needed -->
   </div>
 </body>
 </html>
