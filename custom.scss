@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import "scss/bootstrap";
+@import "scss/navbar";
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+$primary-color: #6c63ff;
+$secondary-color: #f8f9fa;
+$text-color: #333;
+$font-size-base: 16px;
+$font-size-large: 24px;
+
+.container {
+  max-width: 100%;
+  background-color: $secondary-color;
+}
+
+.title {
+  font-size: $font-size-large;
+  color: $primary-color;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: $font-size-base;
+  color: $text-color;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: $font-size-base;
+  color: #fff;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 0.25rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: $primary-color;
+  margin-right: 0.5rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  width: 40px;
+  height: auto;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-link {
+  color: $primary-color;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  padding: 0.5rem;
+
+  &:hover {
+    color: lighten($primary-color, 20%);
+  }
+}
+
+.user-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  color: #fff;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28%255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
